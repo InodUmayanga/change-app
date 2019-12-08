@@ -1,0 +1,17 @@
+<mat-card class="loginCard" >
+        <span class="loginTitle">Welcome to Change Application</span>
+<br>
+<form #loginForm="ngForm" (submit)="loginNow(loginForm)" >
+<div class="loginControl">
+    <mat-form-field class="example-full-width">
+      <input name="userName" #userName="ngModel" ngModel type="text" matInput placeholder="User Name">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <input type="password" name="password" ngModel #password="ngModel" matInput placeholder="Password">
+    </mat-form-field>
+    <br>
+    <button color="accent" mat-raised-button>Login</button>
+  </div>
+</form>
+</mat-card>
